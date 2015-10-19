@@ -1,0 +1,4 @@
+Php Philip Schoof
+
+-Kalender Arbeitszeiten eintragen und abrufen
+-Ausrechnen des Gehaltes je nach Steuerklasse
