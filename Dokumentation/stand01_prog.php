@@ -1,7 +1,7 @@
 <?php
 /** Php Philip Schoof
 
-*Kalender Arbeitszeiten eintragen und abrufen
+*Kalender erstellen in dem man dann Arbeitszeiten eintragen und abrufen kann
 *Ausrechnen des Gehaltes je nach Steuerklasse
 *Profile verwalten
 **/
