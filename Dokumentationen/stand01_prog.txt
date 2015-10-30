@@ -36,6 +36,6 @@ private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag"
          
         $month == null;
 		
-		$day ==
+	$day ==
 
 
