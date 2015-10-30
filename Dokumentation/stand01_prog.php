@@ -14,7 +14,7 @@ class Calendar {
       $this->naviHref = htmlentities($_SERVER['PHP_SELF']);
     }
 
-    //
+    // Der Kalender
 
 private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag","Sonntag");
      
