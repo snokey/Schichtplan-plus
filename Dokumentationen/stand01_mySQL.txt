@@ -1,6 +1,0 @@
-Die Anwendung soll ein System für eine einfache Benutzerkontenverwaltung implementieren, es werden also
-alle benötigten Benutzerdaten in der Datenbank gespeichert. Dazu gehören auf jeden Fall erst einmal der Benutzername
-und das Passwort in form eines Hashes, beide als Varchar gespeichert. Außerdem kommen noch Personenbezogene Daten rein
-die zum Teil nur optional sein sollen. Name, E-Mail Adresse, Alter etc. 
-Dann natürlich die eigentlichen Daten für die Anwendung, also Kalendereinträge, Termine, Kontakte usw.
-Ich würde erst einmal zwei Tabellen dafür verwenden um nicht Benutzerdaten und Anwendungsdaten zu vermischen.
