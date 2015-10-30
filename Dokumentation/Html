@@ -1,0 +1,16 @@
+html
+
+Die Anwendung besteht aus einer Hauptseite in der in einer oberen Leiste 4 verschiedene Auswahlkriterien aufgelistet sind:
+Login/Registrieren, Gehaltsrechner, Kalender und wichitge KOntakte.
+Dabei soll sich dann in einem unteren Feld die jeweilige Ansicht öffnen.
+
+Login/Registrieren: 2 Felder zum Eintragen von Benuternamen und Passwort sowie eine Option zum neu Registrieren. 
+Von dort gelangt man zu einer neuen Ansicht in der man seine benötigten Daten zum Registrien eingibt.
+
+Gehaltsrechner: dort werden verschiedene Eingaben in Felder gemcht zu Gehalt, Job (Minijob, Teil- , Vollzeit,...),Steuerklasse
+und weitere Sachen, sodass einem am Ende Brutto und Netto angezeigt wird.
+
+Kalender: Hier wird ein gregorianscher Kaldener angezeigt (jeweils nur 1 Monat) in den man seine Arbeitszeit eintragen kann.
+
+Wichtige Kontakte: Dabei handelt es sich um eine Auflistung persönlicher und wichtiger Kontakte (z.B. Arbeitgeber),
+die der benutzer selber eingeben kann.
