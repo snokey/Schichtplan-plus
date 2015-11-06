@@ -42,5 +42,18 @@ private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag"
 		}else if(null==$year){
 			$year
 		}
+		
+		        
+         
+        if(null==$month&&isset($_GET['month'])){
+ 
+            $month = $_GET['month'];
+         
+        }else if(null==$month){
+ 
+            $month = date("m",time());
+         
+        }        
+
 
 
