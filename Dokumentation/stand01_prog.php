@@ -55,5 +55,10 @@ private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag"
          
         }        
 
+		  $this->currentYear=$year;
+         
+        $this->currentMonth=$month;
+         
+        $this->daysInMonth=$this->_daysInMonth($month,$year);
 
 
