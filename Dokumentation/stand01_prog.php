@@ -37,11 +37,11 @@ private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag"
          
         $month == null;
 		
-		if(null==$year&&isset($_GET['year'])){
-			$year = $_GET['year'];
-		}else if(null==$year){
-			$year
-		}
+	if(null==$year&&isset($_GET['year'])){
+		$year = $_GET['year'];
+	}else if(null==$year){
+		$year
+	}
 		
 		        
          
