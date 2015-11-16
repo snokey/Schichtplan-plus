@@ -60,5 +60,35 @@ private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag"
         $this->currentMonth=$month;
          
         $this->daysInMonth=$this->_daysInMonth($month,$year);
+		
+		$content='<div id="calendar">'.
+                        '<div class="box">'.
+                        $this->_createNavi().
+                        '</div>'.
+                        '<div class="box-content">'.
+                                '<ul class="label">'.$this->_createLabels().'</ul>';   
+                                $content.='<div class="clear"></div>';     
+                                $content.='<ul class="dates">';    
+                                 
+                                $weeksInMonth = $this->_weeksInMonth($month,$year);
+                                // wochen im monat
+                                for( $i=0; $i<$weeksInMonth; $i++ ){
+                                     
+                                    //Tage in der Woche
+                                    for($j=1;$j<=7;$j++){
+                                        $content.=$this->_showDay($i*7+$j);
+                                    }
+                                }
+                                 
+                                $content.='</ul>';
+                                 
+                                $content.='<div class="clear"></div>';     
+             
+                        $content.='</div>';
+                 
+        $content.='</div>';
+        return $content;   
+    }
+
 
 
