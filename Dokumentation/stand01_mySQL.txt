@@ -4,3 +4,26 @@ und das Passwort in form eines Hashes, beide als Varchar gespeichert. Außerdem 
 die zum Teil nur optional sein sollen. Name, E-Mail Adresse, Alter etc. 
 Dann natürlich die eigentlichen Daten für die Anwendung, also Kalendereinträge, Termine, Kontakte usw.
 Ich würde erst einmal zwei Tabellen dafür verwenden um nicht Benutzerdaten und Anwendungsdaten zu vermischen.
+
+
+Benutzertabelle (query aus phpmyadmin):
+
+	CREATE TABLE `schichtplan`.`user` 
+	( `id` INT NOT NULL AUTO_INCREMENT , 
+	`name` VARCHAR(32) NOT NULL , 
+	`email` VARCHAR(64) NOT NULL , 
+	`pass` VARCHAR(32) NOT NULL , 
+	PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+Schichttabelle:
+	CREATE TABLE `schichtplan`.`schicht` 
+	( `id` INT NOT NULL AUTO_INCREMENT , 
+	`beginning` DATETIME NOT NULL , 
+	`end` DATETIME NOT NULL , 
+	`userId` INT NOT NULL,
+	PRIMARY KEY (`id`)) ENGINE = InnoDB;
+	
+	
+Ich habe mir überlegt die Schichten jeweils mit zwei Datetimes zu speichern, damit kann ein Zeitfenster eindeutig registriert werden. Für jedes Zeitfenster
+wird also ein Datensatz in der Tabelle angelegt, die userId Spalte enthält die Id des jeweiligen Nutzers. Darüber läuft dann die Zuordnung von Benutzer zu Schicht.
