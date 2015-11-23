@@ -145,6 +145,19 @@ private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag"
             '</div>';
     }
 
+	private function _createLabels(){  
+                 
+        $content='';
+         
+        foreach($this->dayLabels as $index=>$label){
+             
+            $content.='<li class="'.($label==6?'end title':'start title').' title">'.$label.'</li>';
+ 
+        }
+         
+        return $content;
+    }
+
 
 
 
