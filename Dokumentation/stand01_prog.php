@@ -127,7 +127,24 @@ private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag"
     }
 	
 	
-	
+	private function _createNavi(){
+         
+        $nextMonth = $this->currentMonth==12?1:intval($this->currentMonth)+1;
+         
+        $nextYear = $this->currentMonth==12?intval($this->currentYear)+1:$this->currentYear;
+         
+        $preMonth = $this->currentMonth==1?12:intval($this->currentMonth)-1;
+         
+        $preYear = $this->currentMonth==1?intval($this->currentYear)-1:$this->currentYear;
+         
+        return
+            '<div class="header">'.
+                '<a class="prev" href="'.$this->naviHref.'?month='.sprintf('%02d',$preMonth).'&year='.$preYear.'">Prev</a>'.
+                    '<span class="title">'.date('Y M',strtotime($this->currentYear.'-'.$this->currentMonth.'-1')).'</span>'.
+                '<a class="next" href="'.$this->naviHref.'?month='.sprintf("%02d", $nextMonth).'&year='.$nextYear.'">Next</a>'.
+            '</div>';
+    }
+
 
 
 
