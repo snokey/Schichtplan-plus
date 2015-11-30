@@ -33,9 +33,9 @@ private $dayLabels = array("Montag","Dienstag","Mittwoch","Donnerstag","Freitag"
     //
 
     public function show() {
-        $year  == null;
+        $year  = null;
          
-        $month == null;
+        $month = null;
 		
 	if(null==$year&&isset($_GET['year'])){
 		$year = $_GET['year'];
@@ -202,3 +202,4 @@ private function _weeksInMonth($month=null,$year=null){
 }
 
 
+?>
