@@ -27,3 +27,13 @@ Schichttabelle:
 	
 Ich habe mir überlegt die Schichten jeweils mit zwei Datetimes zu speichern, damit kann ein Zeitfenster eindeutig registriert werden. Für jedes Zeitfenster
 wird also ein Datensatz in der Tabelle angelegt, die userId Spalte enthält die Id des jeweiligen Nutzers. Darüber läuft dann die Zuordnung von Benutzer zu Schicht.
+
+=== Feedback Alpers, Dez 11 ===
+
+Das ist als Einstieg gut gedacht und die Erzeugung der Relationen ist ebenfalls gut.
+Allerdings ist es leider auch nicht mehr als das. So fehlen bislang die zugehörigen Transaktionen.
+Außerdem sollten Sie für ein Projekt deutlich mehr machen als nur das Erzeugen von zwei einfachen Relationen.
+Überlegen Sie sich dazu, was noch alles eine sinnvolle Ergänzung zum Projekt Ihrer Gruppe wäre.
+
+Außerdem kann ich gerade Ihre Matrikelnummer nicht finden. Bitte tragen Sie sich in den EMIL-Lernraum ein.
+(Wenn Sie das schon getan haben, dann habe ich hier leider nicht Ihren richtigen Namen auf der Liste. Aber das müssten wir schnell klären können.)
